@@ -38,6 +38,7 @@ export const InputSearchBox = styled.div`
     flex: 1;
     border: none;
     font-size: 1.25rem;
+    font-weight: 400;
     :focus {
       outline: none;
     }

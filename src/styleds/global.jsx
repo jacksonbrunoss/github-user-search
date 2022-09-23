@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   :root {
     --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --dark-color-a: #141C2F;
@@ -34,5 +34,3 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
 `;
-
-export default GlobalStyle;
