@@ -1,7 +1,15 @@
 import { useState } from "react";
 
+import Navbar from "./components/Navbar";
+import Search from "./components/Search";
+
 function App() {
-  return <div className="App">Ola</div>;
+  return (
+    <>
+      <Navbar />
+      <Search />
+    </>
+  );
 }
 
 export default App;
