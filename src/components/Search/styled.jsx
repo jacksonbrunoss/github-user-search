@@ -47,6 +47,11 @@ export const InputSearchBox = styled.div`
     :focus {
       outline: none;
     }
+    ::-webkit-input-placeholder {
+      @media (max-width: 36.5rem) {
+        font-size: 0.9rem;
+      }
+    }
   }
 `;
 export const BtnIcon = styled.button`
