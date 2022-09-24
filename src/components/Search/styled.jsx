@@ -17,13 +17,16 @@ export const ButtonSearch = styled.button`
   letter-spacing: 0.1rem;
   color: var(--light-color-b);
   cursor: pointer;
+  @media (max-width: 36.5rem) {
+    display: none;
+  }
 `;
 export const SearchWrapper = styled.div`
   width: 100%;
   height: 60px;
   margin-top: 2rem;
   padding: 5px;
-  background: var(--light-color-b);
+  background: var(--bgComp);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -35,10 +38,12 @@ export const InputSearchBox = styled.div`
   display: flex;
 
   > input {
+    background: transparent;
     flex: 1;
     border: none;
     font-size: 1.25rem;
     font-weight: 400;
+    color: var(--color);
     :focus {
       outline: none;
     }
@@ -50,4 +55,5 @@ export const BtnIcon = styled.button`
   color: var(--blue-color);
   border: none;
   background: transparent;
+  cursor: pointer;
 `;

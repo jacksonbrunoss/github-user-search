@@ -29,6 +29,7 @@ export const ButtonTheme = styled.button`
   cursor: pointer;
   border: none;
   background: transparent;
+  color: var(--color);
   > span {
     margin-right: 0.8rem;
   }

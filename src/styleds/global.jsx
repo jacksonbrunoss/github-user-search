@@ -9,6 +9,9 @@ export const GlobalStyles = createGlobalStyle`
     --light-color-a: #F5F8FF;
     --light-color-b: #FEFEFE;
     --blue-color: #0677FB;
+    --bg: ${({ theme }) => theme.body};
+    --color: ${({ theme }) => theme.text};
+    --bgComp: ${({ theme }) => theme.bgComp};
     
   }
   * {
@@ -20,8 +23,9 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0px;
     padding: 0px;
     font-weight: 300;
-    background: var(--light-color-a);
-    color: var(--dark-color-c);
+    background: var(--bg);
+    color: var(--color);
+    transition: all 0.25s linear;
   }
   h1, h2, h3, h4, p, ul, li, ol, span, a {
     list-style: none;
@@ -29,9 +33,11 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     padding: 0px;
     margin: 0px;
-    color: var(--dark-color-c);
   }
   img {
     max-width: 100%;
+  }
+  a {
+    color: var(--color);
   }
 `;

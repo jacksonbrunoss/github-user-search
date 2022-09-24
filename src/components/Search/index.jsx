@@ -18,7 +18,7 @@ const Search = () => {
       <S.Container>
         <S.SearchWrapper>
           <S.InputSearchBox>
-            <S.BtnIcon>
+            <S.BtnIcon onClick={handleButton}>
               <FaSistrix />
             </S.BtnIcon>
             <input
