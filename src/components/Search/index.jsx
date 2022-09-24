@@ -6,7 +6,7 @@ import * as S from "./styled";
 
 const Search = () => {
   const { data, handleSearch } = React.useContext(GithubContext);
-  const [user, setUser] = React.useState("");
+  const [user, setUser] = React.useState("vitorss");
 
   const handleButton = () => {
     handleSearch(user);

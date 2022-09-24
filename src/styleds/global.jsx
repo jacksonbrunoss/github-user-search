@@ -29,6 +29,7 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     padding: 0px;
     margin: 0px;
+    color: var(--dark-color-c);
   }
   img {
     max-width: 100%;
